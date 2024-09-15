@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { HiMenuAlt4 } from "react-icons/hi";
 
-function App() {
+function App() {  
   return (
-    <div className="App">
+    <div className="body">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="initials">
+          <p>bb</p>
+        </div>
+          <button className="menu">menu <HiMenuAlt4 className="icon"/></button>
       </header>
+      <div className="content">
+        <div className="title">
+          <p>Turning ideas into creative solutions.</p>
+        </div>
+        <div className="description">
+          <p>Innovative web developer crafting unique user experiences.</p>
+        </div>
+      </div>
     </div>
   );
 }
